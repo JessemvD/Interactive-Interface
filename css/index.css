@@ -1,15 +1,3 @@
- @font-face {
-            font-family: 'blackfont'; 
-            src: url('../media/Nimbus\ Sans\ Black.otf') format('woff2'),
-                 url('../media/Nimbus\ Sans\ Black.otf') format('woff');
- }
-
- @font-face {
-            font-family: 'condblack'; 
-            src: url('../media/fonts/Nimbus\ Sans\ Cond\ L\ Black.otf') format('woff2'),
-                 url('../media/fonts/ Sans\ Cond\ L\ Black.otf') format('woff');
- }
-
 html {
     background-color: black;
     font-family: condblack;
