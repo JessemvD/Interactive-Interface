@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Audiovisuele-Media-Kleur: rgb(255, 221, 0);
+    --Media-Management-Kleur: rgb(245, 156, 0);
+    --Mediavormgeven-Kleur: rgb(228, 4, 40);
+    --Redactiemedewerker-Kleur: rgb(231, 49, 136);
+    --Creative-Productie-Kleur: rgb(120, 63, 145);
+    --Mediatechnologie-Kleur: rgb(0, 99, 175);
+    --podium-En-Evenemententechniek-Kleur: rgb(45, 184, 197);
+}
