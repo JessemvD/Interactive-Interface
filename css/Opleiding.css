@@ -1,4 +1,19 @@
 body{
     margin: 0;
+    text-transform: uppercase;
     padding: 0;
+}
+.header{
+
+    font-size: 4em;
+    width: 100vw;
+    height: 405px;
+    color: white;
+    position: absolute;
+    background-color: var(--Mediavormgeven-Kleur);
+}
+.opleidingTitel{
+    line-height: 100px;
+    font-family: condblack;
+    margin: 15% 7.5% 0;
 }
