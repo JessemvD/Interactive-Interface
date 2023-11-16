@@ -4,7 +4,8 @@ html {
     color: white;
 }
 body {
-    margin: 0;    
+    margin: 0;
+    height: 200vh;
 }
 
 .container {
@@ -55,7 +56,7 @@ body {
 
 .tekst2 {
     float: right;
-    margin-top: 20px;
+    margin-top: 19px;
     position: absolute;
     background-color: black;
     font-size: 100px;
@@ -65,8 +66,6 @@ body {
     text-shadow: 0px 0px  rgb(11, 202, 11) ;
     font-size: 80px;  
     letter-spacing: 3px;
-
-   
 }
 
 
@@ -110,4 +109,15 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+
+.test_img {
+    width: 1080px;
+    height: auto;
+}
+
+.test_img_box {
+    width: 1080px;
+   margin-bottom: 0;
 }
