@@ -1,8 +1,24 @@
+ @font-face {
+            font-family: 'blackfont'; 
+            src: url('../css/Nimbus\ Sans\ Black.otf') format('woff2'),
+                 url('../css/Nimbus\ Sans\ Black.otf') format('woff');
+ }
+
+ @font-face {
+            font-family: 'condblack'; 
+            src: url('../css/Nimbus\ Sans\ Cond\ L\ Black.otf') format('woff2'),
+                 url('../css/Nimbus\ Sans\ Cond\ L\ Black.otf') format('woff');
+ }
+
 html {
     background-color: black;
+    font-family: condblack;
+    color: white;
 }
 body {
     margin: 0;
+    height: 200vh;
+    
 }
 
 .container {
@@ -11,7 +27,8 @@ body {
     height: 1920px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    z-index: -2;
+    scroll-snap-type: y mandatory;
 }
 
 #logodiv {
@@ -19,5 +36,90 @@ body {
 }
 
 .logo {
-    width: 100px;
+    position: relative;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 20;
+    box-shadow: 1px 1px 20px black;
+    pointer-events: none;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.tekst {
+    position: absolute;
+    background-color: black;
+    font-size: 110px;
+    top: 1150px;
+    margin-left: 380px;
+    padding: 20px;
+    padding-right: 100px;
+    width: 500px;
+    
+    
+}
+
+#tekst1 {
+    line-height: 100px;
+}
+
+.tekst2 {
+     position: absolute;
+    background-color: black;
+    font-size: 100px;
+   text-align: center;
+    width: 550px;
+    margin: 20px ;
+    text-shadow: 0px 0px  rgb(11, 202, 11) ;
+   
+}
+
+
+
+@keyframes shadow {
+0% {
+    /* text-shadow: 0px 0px  rgb(11, 202, 11); */
+    /* rotate: 5deg; */
+    bottom: 1%;
+}
+
+50% {
+    /* text-shadow: 0px 8px  rgb(11, 202, 11); */
+    /* rotate: -5deg; */
+    bottom: 3%;
+}
+
+100% {
+    /* text-shadow: 0px 0px  rgb(11, 202, 11); */
+    /* rotate: 5deg; */
+    bottom: 1%;
+}
+    
+}
+
+.meerinfo {
+    text-decoration: none;
+    color: white;
+}
+
+.arrow {
+    position: absolute;
+    animation: shadow 3.5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    font-size: 120px;
+    bottom: 20px;
+    left: 50%;
+    text-shadow: 0px 4px  rgb(11, 202, 11);
+    transform: translate(-50%);
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
