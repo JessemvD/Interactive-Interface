@@ -150,19 +150,20 @@ body {
 }
 
 .opleiding-button {
+    position: absolute;
     background-color: black;
-    text-align: center;
     color: white;
     width: 14rem;
     height: 4rem;
-    position: absolute;
     top: 9rem;
     left: 47rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.opleiding-button a {
+.opleiding-button * {
     text-decoration: none;
     color: white;
 }
-
-
