@@ -97,27 +97,166 @@ body {
 }
 
 .arrow {
-    position: absolute;
     animation: shadow 3.5s ease-in-out infinite;
     animation-fill-mode: forwards;
     font-size: 120px;
-    bottom: 20px;
-    left: 50%;
     text-shadow: 0px 4px  rgb(11, 202, 11);
-    transform: translate(-50%);
+    margin-top: 1500px;
+
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-
-.test_img {
+.opleidingen-container {
     width: 1080px;
-    height: auto;
+    height: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    color: black;
+    position: absolute;
 }
 
-.test_img_box {
-    width: 1080px;
-   margin-bottom: 0;
+/* MEDIA VORMGEVING */
+.opleiding-section {
+    width: 100%;
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
 }
+
+.left {
+    width: 50%;
+    padding-top: 3rem;
+    padding-left: 13rem;
+    line-height: 1rem;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    padding-right: 8rem;
+    width: 50%;
+}
+.square {
+    width: 275px;
+    height: 275px;
+    background-color:  var( --Mediavormgeven-Kleur);    
+}
+
+.opleiding-button {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 14rem;
+    height: 4rem;
+    position: absolute;
+    top: 9rem;
+    left: 47rem;
+    padding-top: 1.5rem;
+}
+
+
+.opleiding-button span {
+    margin-top: 10px;
+}
+
+
+/* AUDIOVISUELE MEDIA */
+
+.opleiding-section {
+    width: 100%;
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.left {
+    width: 50%;
+    padding-top: 3rem;
+    padding-left: 13rem;
+    line-height: 1rem;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    padding-right: 8rem;
+    width: 50%;
+}
+.square {
+    width: 275px;
+    height: 275px;
+    background-color:  var( --Mediavormgeven-Kleur);    
+}
+
+.opleiding-button {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 14rem;
+    height: 4rem;
+    position: absolute;
+    top: 9rem;
+    left: 47rem;
+    padding-top: 1.5rem;
+}
+
+
+.opleiding-button span {
+    margin-top: 10px;
+}
+
+
+
+
+.opleiding-section {
+    width: 100%;
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.left {
+    width: 50%;
+    padding-top: 3rem;
+    padding-left: 13rem;
+    line-height: 1rem;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    padding-right: 8rem;
+    width: 50%;
+}
+.square {
+    width: 275px;
+    height: 275px;
+    background-color:  var( --Mediavormgeven-Kleur);    
+}
+
+.opleiding-button {
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 14rem;
+    height: 4rem;
+    position: absolute;
+    top: 9rem;
+    left: 47rem;
+    padding-top: 1.5rem;
+}
+
+
+.opleiding-button span {
+    margin-top: 10px;
+}
+
