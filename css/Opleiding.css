@@ -22,9 +22,21 @@ body{
     position: absolute;
     top: 25%;
 }
-.bannerLogo{
+.headerLogo{
     position: absolute;
     top: 10%;
     right: 5%;
     height: 60%;
+}
+
+.banner{
+    color: white;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    background-color: #000;
+    position: absolute;
+    top: 25%;
 }
