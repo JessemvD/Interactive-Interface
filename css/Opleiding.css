@@ -47,23 +47,44 @@ body {
     transform: translate(-50%);
     width: 75%;
     margin-bottom: 0%;
+    text-align: center;
 }
 
 .onderwerp {
     position: absolute;
-    top: 28%;
+    top: 27%;
     width: 75%;
     left: 50%;
+
     transform: translate(-50%);
     margin-top: 0;
 }
 .onderwerp h2{
     line-height: 1em;
     font-size: 3.5em;
+    margin-bottom: 0%;
 
 }
 .onderwerp p{
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif!important;
+    font-weight: 600;
     font-size: 1.75em;
+}
+.text-foto{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    font-size: 1.75em;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 75%;
+}
+.text-foto img{
+    width: 35vw;
+    border: red solid 5%;
 }
 .mv {
     color: var(--Mediavormgeven-Kleur);
