@@ -1,9 +1,11 @@
-body{
+body {
     margin: 0;
     text-transform: uppercase;
     padding: 0;
+    font-family: condblack;
 }
-.header{
+
+.header {
 
     font-size: 4em;
     width: 100vw;
@@ -12,24 +14,26 @@ body{
     position: absolute;
     background-color: var(--Mediavormgeven-Kleur);
 }
-.opleidingTitel{
+
+.opleidingTitel {
     line-height: 100px;
-    font-family: condblack;
     margin: 15% 7.5% 0;
 }
-.icons{
+
+.icons {
     color: black;
     position: absolute;
     top: 25%;
 }
-.headerLogo{
+
+.headerLogo {
     position: absolute;
     top: 10%;
     right: 5%;
     height: 60%;
 }
 
-.banner{
+.banner {
     color: white;
     font-size: 15px;
     font-family: Arial;
@@ -39,4 +43,25 @@ body{
     background-color: #000;
     position: absolute;
     top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 75%;
+    margin-bottom: 0%;
+}
+
+.onderwerp {
+    position: absolute;
+    top: 28%;
+    line-height: 1.5em;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 0;
+}
+.onderwerp h2{
+    font-size: 2.5em;
+
+}
+.mv {
+    color: var(--Mediavormgeven-Kleur);
 }
