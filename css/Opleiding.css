@@ -7,9 +7,8 @@ body {
 
 .header {
 
-    font-size: 4em;
+    font-size: 3.7em;
     width: 100vw;
-    height: 405px;
     color: white;
     position: absolute;
     background-color: var(--Mediavormgeven-Kleur);
@@ -29,8 +28,8 @@ body {
 .headerLogo {
     position: absolute;
     top: 10%;
-    right: 5%;
-    height: 60%;
+    right: 12%;
+    height: 50%;
 }
 
 .banner {
@@ -84,7 +83,7 @@ body {
 }
 .text-foto img{
     width: 35vw;
-    border: red solid 5%;
+    border: rgb(228, 4, 40) solid 10px;
 }
 .mv {
     color: var(--Mediavormgeven-Kleur);
