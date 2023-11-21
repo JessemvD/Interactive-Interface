@@ -17,3 +17,14 @@ body{
     font-family: condblack;
     margin: 15% 7.5% 0;
 }
+.icons{
+    color: black;
+    position: absolute;
+    top: 25%;
+}
+.bannerLogo{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    height: 60%;
+}
