@@ -52,14 +52,14 @@ body {
 .onderwerp {
     position: absolute;
     top: 28%;
-    line-height: 1.5em;
+    line-height: 3em;
     width: 75%;
     left: 50%;
     transform: translate(-50%);
     margin-top: 0;
 }
 .onderwerp h2{
-    font-size: 5em;
+    font-size: 3.5em;
 
 }
 .mv {
