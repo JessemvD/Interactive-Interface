@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: white;
     font-family: condblack;
     color: white;
 }
@@ -14,7 +14,6 @@ body {
     height: 1920px;
     margin-left: auto;
     margin-right: auto;
-    z-index: -2;
     scroll-snap-type: y mandatory;
 }
 
@@ -101,9 +100,9 @@ body {
     margin-right: auto;
     left: 50%;
     transform: translate(-50%);
-    background-color: white;
     color: black;
     position: absolute;
+    z-index: 10;
 }
 
 .opleiding-section-right {
@@ -160,6 +159,8 @@ body {
     text-decoration: none;
     color: white;
     height: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .button-1 {
@@ -201,4 +202,21 @@ body {
 
 .opleidingen-whitespace {
     height: 3rem;
+}
+
+.background-img-1 {
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    z-index: -10;
+
+}
+.background-img-2 {
+    width: 50%;
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 1rem;
+    right: 0;
+    z-index: -10;
+
 }
