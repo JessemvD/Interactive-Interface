@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="shortcut icon" href="media/Logo.jpg" type="image/x-icon">
-  <script src="js/script.js" defer=""></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body onload="typeWriter()">
   <div class="container">
@@ -26,20 +26,20 @@
   </div>
 
   <div class="opleidingen-container">
-    <div class="opleidingen-whitespace"></div>
-    <section class="opleiding-section-right">
+    <div class="opleidingen-whitespace" id="whitespace"></div>
+    <section class="opleiding-section-right" >
       <div class="opleiding left">
         <div><h1>MEDIA</h1><H1>VORMGEVER</H1></div>
       </div>
       <div class="opleiding right">
-        <div class="square-right"></div>
+        <div class="square-right square-animation" id="square-right1" onclick="modeswitch('square-right1')"></div>
         <a class="opleiding-button button-1" href="opleidingen/mv.html"><span>MEER INFO</span></a>
       </div>
     </section>
 
     <section class="opleiding-section-right">
       <div class="opleiding right">
-        <div style="background-color: var(--Audiovisuele-Media-Kleur);" class="square-left"></div>
+        <div style="background-color: var(--Audiovisuele-Media-Kleur);" class="square-left square-animation" id="square-right2" onclick="modeswitchleft('square-right2')"></div>
       <a class="opleiding-button button-2" href="opleidingen/mv.html"><span>MEER INFO</span></a>
       </div>
       <div class="opleiding left">
@@ -53,14 +53,14 @@
         <div><h1>MEDIA</h1><H1>MANAGER</H1></div>
       </div>
       <div class="opleiding right">
-        <div style="background-color: var(  --Media-Management-Kleur);" class="square-right"></div>
+        <div style="background-color: var(  --Media-Management-Kleur);" class="square-right square-animation" id="square-right3" onclick="modeswitch('square-right3')"></div>
         <a class="opleiding-button button-3" href="opleidingen/mv.html"><span>MEER INFO</span></a>
       </div>
     </section>
 
     <section class="opleiding-section-right">
       <div class="opleiding right">
-        <div style="background-color: var(--Redactiemedewerker-Kleur);" class="square-left"></div>
+        <div style="background-color: var(--Redactiemedewerker-Kleur);" class="square-left square-animation" id="square-right4" onclick="modeswitchleft('square-right4')"></div>
       <a class="opleiding-button button-4" href="opleidingen/mv.html"><span>MEER INFO</span></a>
       </div>
       <div class="opleiding left">
@@ -75,14 +75,14 @@
         <div><h1>MEDIA</h1><H1>TECHNOLOGIE</H1></div>
       </div>
       <div class="opleiding right">
-        <div style="background-color: var(--Creative-Productie-Kleur);" class="square-right"></div>
+        <div style="background-color: var(--Creative-Productie-Kleur);" class="square-right square-animation" id="square-right5" onclick="modeswitch('square-right5')"></div>
         <a class="opleiding-button button-5" href="opleidingen/mv.html"><span>MEER INFO</span></a>
       </div>
     </section>
 
     <section class="opleiding-section-right">
       <div class="opleiding right">
-        <div style="background-color: var(--Mediatechnologie-Kleur);" class="square-left"></div>
+        <div style="background-color: var(--Mediatechnologie-Kleur);" class="square-left square-animation" id="square-right6" onclick="modeswitchleft('square-right6')"></div>
       <a class="opleiding-button button-6" href="opleidingen/mv.html"><span>MEER INFO</span></a>
       </div>
       <div class="opleiding left">
@@ -96,7 +96,7 @@
         <div><h1>PODIUM EN</h1><H1>EVENEMENTEN</H1><h1>TECHNICUS</h1></div>
       </div>
       <div class="opleiding right">
-        <div style="background-color: var(--podium-En-Evenemententechniek-Kleur);" class="square-right"></div>
+        <div style="background-color: var(--podium-En-Evenemententechniek-Kleur);" class="square-right square-animation" id="square-right7" onclick="modeswitch('square-right7')"></div>
         <a class="opleiding-button button-7" href="opleidingen/mv.html"><span>MEER INFO</span></a>
       </div>
     </section>

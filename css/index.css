@@ -126,15 +126,176 @@ body {
     width: 50%;
 }
 .square-left {
+    position: absolute;
     width: 250px;
     height: 250px;
+    right: 41rem;
+    z-index: auto;
     background-color:  var( --Mediavormgeven-Kleur);   
-    margin-left: 8rem; 
+
+
 }
 .square-right {
+    position: absolute;
     width: 250px;
     height: 250px;
-    background-color:  var( --Mediavormgeven-Kleur);    
+    background-color:  var( --Mediavormgeven-Kleur);
+}
+
+@keyframes hoverAnimation {
+    0% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 41rem;
+        z-index: auto;
+    }
+    10% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 42.5rem;
+        z-index: auto;
+    }
+    50% {
+        position: absolute;
+        left: 0%;
+        width: 250px;
+        height: 250px;
+        z-index: 10;
+    }
+    100% {
+        position: absolute;
+        left: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+
+    }
+}
+
+@keyframes hoverAnimationClose {
+    100% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 41rem;
+        z-index: auto;
+    }
+    90% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 42.5rem;
+        z-index: auto;
+    }
+    50% {
+        position: absolute;
+        left: 0%;
+        width: 250px;
+        height: 250px;
+        z-index: 10;
+    }
+    0% {
+        position: absolute;
+        left: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+
+    }
+}
+
+
+@keyframes hoverAnimation1 {
+    0% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        right: 41rem;
+        z-index: auto;
+        pointer-events: none;
+
+    }
+  
+    10% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        right: 42.5rem;
+        z-index: auto;
+        pointer-events: none;
+
+    }
+    50% {
+        position: absolute;
+        right: 0%;
+        width: 250px;
+        height: 250px;
+        z-index: 10;
+        pointer-events: none;
+
+    }
+    100% {
+        position: absolute;
+        right: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+
+    }
+}
+@keyframes hoverAnimation1Close {
+    100% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        right: 41rem;
+        z-index: auto;
+        pointer-events: none;
+
+    }
+  
+    90% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        right: 42.5rem;
+        z-index: auto;
+        pointer-events: none;
+
+    }
+    50% {
+        position: absolute;
+        right: 0%;
+        width: 250px;
+        height: 250px;
+        z-index: 10;
+        pointer-events: none;
+
+    }
+    0% {
+        position: absolute;
+        right: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+}
+
+.hoverAnimation {
+    animation: hoverAnimation 2s ease-in-out forwards;
+}
+.hoverAnimationClose {
+    animation: hoverAnimationClose 2s ease-in-out forwards;
+}
+.hoverAnimation1 {
+    animation: hoverAnimation1 2s ease-in-out forwards;
+}
+.hoverAnimation1Close {
+    animation: hoverAnimation1Close 2s ease-in-out forwards;
 }
 
 .opleiding-button {
@@ -161,6 +322,7 @@ body {
     height: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .button-1 {
@@ -192,6 +354,7 @@ body {
     padding: 0.2rem;
     left: 48rem;
     margin-top: 97rem;
+    z-index: 5;
 }
 .button-7 {
     padding: 0.2rem;

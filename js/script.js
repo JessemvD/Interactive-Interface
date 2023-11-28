@@ -9,3 +9,66 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+// function animation1() {
+//   document.getElementById('square-right1').style.animation = 'hoverAnimation 2.5s ease-in-out forwards';
+// }
+// function animation2() {
+//   document.getElementById('square-right2').style.animation = 'hoverAnimation1 2.5s ease-in-out forwards';
+// }
+// function animation3() {
+//   document.getElementById('square-right3').style.animation = 'hoverAnimation 2.5s ease-in-out forwards';
+// }
+// function animation4() {
+//   document.getElementById('square-right4').style.animation = 'hoverAnimation1 2.5s ease-in-out forwards';
+// }
+// function animation5() {
+//   document.getElementById('square-right5').style.animation = 'hoverAnimation 2.5s ease-in-out forwards';
+// }
+// function animation6() {
+//   document.getElementById('square-right6').style.animation = 'hoverAnimation1 2.5s ease-in-out forwards';
+// }
+// function animation7() {
+//   document.getElementById('square-right7').style.animation = 'hoverAnimation 2.5s ease-in-out forwards';
+// }
+
+// function test(e) {
+//   e.classList.toggle("hoverAnimationClose");
+//   e.classList.toggle("hoverAnimation");
+// }
+
+function modeswitch(squareId) {
+  var changeElement = document.getElementById(squareId);
+  if (changeElement) {
+    changeElement.classList.add("hoverAnimation");
+    changeElement.classList.remove("hoverAnimationClose");
+    changeElement.setAttribute("onclick", "modeswitch2('" + squareId + "')");
+  }
+}
+
+function modeswitch2(squareId) {
+  var changeElement = document.getElementById(squareId);
+  if (changeElement) {
+    changeElement.classList.add("hoverAnimationClose");
+    changeElement.classList.remove("hoverAnimation");
+    changeElement.setAttribute("onclick", "modeswitch('" + squareId + "')");
+  }
+}
+
+function modeswitchleft(squareId2) {
+  var changeElement = document.getElementById(squareId2);
+  if (changeElement) {
+    changeElement.classList.add("hoverAnimation1");
+    changeElement.classList.remove("hoverAnimation1Close");
+    changeElement.setAttribute("onclick", "modeswitchleft2('" + squareId2 + "')");
+  }
+}
+
+function modeswitchleft2(squareId2) {
+  var changeElement = document.getElementById(squareId2);
+  if (changeElement) {
+    changeElement.classList.add("hoverAnimation1Close");
+    changeElement.classList.remove("hoverAnimation1");
+    changeElement.setAttribute("onclick", "modeswitchleft('" + squareId2 + "')");
+  }
+}
