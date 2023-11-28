@@ -69,40 +69,25 @@ body {
 }
 
 
-
-@keyframes shadow {
-0% {
-    /* text-shadow: 0px 0px  rgb(11, 202, 11); */
-    /* rotate: 5deg; */
-    bottom: 1%;
-}
-
-50% {
-    /* text-shadow: 0px 8px  rgb(11, 202, 11); */
-    /* rotate: -5deg; */
-    bottom: 3%;
-}
-
-100% {
-    /* text-shadow: 0px 0px  rgb(11, 202, 11); */
-    /* rotate: 5deg; */
-    bottom: 1%;
-}
-    
-}
-
 .meerinfo {
     text-decoration: none;
     color: white;
 }
 
 .arrow {
-    animation: shadow 3.5s ease-in-out infinite;
-    animation-fill-mode: forwards;
     font-size: 120px;
-    text-shadow: 0px 4px  rgb(11, 202, 11);
+    text-shadow: 0px 4px rgb(11, 202, 11);
     margin-top: 1500px;
+    animation: moveUpDown 3.5s ease-in-out infinite;
+}
 
+@keyframes moveUpDown {
+    0%, 100% {
+        margin-top: 1450px; /* Initial position */
+    }
+    50% {
+        margin-top: 1500px; /* Middle position (adjust as needed) */
+    }
 }
 
 ::-webkit-scrollbar {
@@ -121,7 +106,6 @@ body {
     position: absolute;
 }
 
-/* MEDIA VORMGEVING */
 .opleiding-section-right {
     width: 100%;
     font-size: 2.8rem;
@@ -201,16 +185,16 @@ body {
 .button-5 {
     padding: 0.2rem;
     left: 48rem;
-    margin-top: 34.5rem;
+    margin-top: 65.7rem;
 }
 .button-6 {
     padding: 0.2rem;
     left: 48rem;
-    margin-top: 34.5rem;
+    margin-top: 97rem;
 }
 .button-7 {
     padding: 0.2rem;
-    margin-top: 50.1rem;
+    margin-top: 81.3rem;
     left: 4rem;
 }
 
