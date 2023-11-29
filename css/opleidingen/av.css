@@ -1,0 +1,152 @@
+.header {
+    font-size: 3.7em;
+    width: 100vw;
+    color: white;
+    position: absolute;
+    background-color: var(--audio-Kleur);
+    text-transform: uppercase;
+    padding-left: 75px;
+}
+
+.opleidingNaam {
+    color: var(--audio-Kleur);
+}
+
+svg {
+    fill: var(--audio-Kleur);
+}
+
+.textVlak1 {
+    background-color: var(--audio-Kleur);
+    position: absolute;
+    color: white;
+    top: 900px;
+    border-radius: 0 35px 35px 0;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px;
+    padding-right: 5%;
+    z-index: 3;
+}
+
+.title {
+    font-family: condblack;
+    margin-top: 2%;
+    font-size: 2.5em;
+}
+
+.platteTekst1 {
+    margin-top: -11%;
+    padding-bottom: 4%;
+    margin-left: 15%;
+    font-size: 1.7em;
+    z-index: 3;
+}
+
+.square {
+    background-color: var(--audio-Kleur);
+    position: absolute;
+    height: 175px;
+    width: 175px;
+    top: 64vh;
+    left: 20vh;
+    z-index: 2;
+}
+
+.textVlak2 {
+    background-color: var(--audio-Kleur);
+    position: absolute;
+    color: white;
+    top: 1270px;
+    left: 480px;
+    border-radius: 35px;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 430px;
+    padding-right: 5%;
+    z-index: 5;
+}
+
+.witVlak1 {
+    border-radius: 35px;
+    position: absolute;
+    top: 1170px;
+    left: 525px;
+    height: 100px;
+    width: 500px;
+    background-color: white;
+    z-index: 10;
+}
+
+.witVlak2 {
+    position: absolute;
+    top: 66.15vh;
+    width: 480px;
+    height: 300px;
+    border-radius: 35px;
+    background-color: white;
+    z-index: 10;
+}
+
+
+.img1 {
+    position: absolute;
+    top: 49vh;
+    left: 46vh;
+    transform: translate(-75%);
+    width: 22vh;
+    border-radius: 35px;
+    z-index: 15;
+}
+
+.img2 {
+    position: absolute;
+    top: 67.16vh;
+    left: .5vh;
+    height: 15vh;
+    width: 23vh;
+    border-radius: 35px;
+    z-index: 15;
+    overflow: hidden;
+}
+
+.jaarOpbouwTitle {
+    position: absolute;
+    top: 82vh;
+    left: 23vh;
+    font-size: 2rem;
+}
+
+.jaarOpbouw {
+    position: absolute;
+    bottom: -1vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100vw;
+
+}
+
+.jaar1,
+.jaar2,
+.jaar3 {
+    border-radius: 1rem;
+    width: 275px;
+    height: 275px;
+    border: solid 1px;
+    border-color: var(--audio-Kleur);
+    padding: 1%;
+    padding-left: 3%;
+}
+
+.jaar1 h4,
+.jaar2 h4,
+.jaar3 h4 {
+    font-size: 1.75em;
+}
+
+.jaar1 p,
+.jaar2 p,
+.jaar3 p {
+    margin-top: -10%;
+    font-size: 1.5em;
+}

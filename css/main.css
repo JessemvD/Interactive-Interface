@@ -1,4 +1,4 @@
-:root{ 
+:root {
     --Mediavormgeven-Kleur: #CF3230;
     --Audiovisuele-Media-Kleur: #FFCF52;
     --Media-Management-Kleur: #DD6C28;
@@ -6,16 +6,22 @@
     --Creative-Productie-Kleur: #614589;
     --Mediatechnologie-Kleur: #5D7BBA;
     --podium-En-Evenemententechniek-Kleur: #83C2D5;
+    --Media-maker-Kleur: #783F9A;
+    --audio-Kleur: #FFDD00;
+    --media-Manager-Kleur: #F59C00;
+    --software-Kleur: #0063AF;
+    --redactie-Kleur: #E73188;
+    --podium-Kleur: #2dd8C5;
 }
 
- @font-face {
-            font-family: 'blackfont'; 
-            src: url('../media/Nimbus\ Sans\ Black.otf') format('woff2'),
-                 url('../media/Nimbus\ Sans\ Black.otf') format('woff');
- }
+@font-face {
+    font-family: 'blackfont';
+    src: url('../media/Nimbus\ Sans\ Black.otf') format('woff2'),
+        url('../media/Nimbus\ Sans\ Black.otf') format('woff');
+}
 
- @font-face {
-            font-family: 'condblack'; 
-            src: url('../media/fonts/Nimbus\ Sans\ Cond\ L\ Black.otf') format('woff2'),
-                 url('../media/fonts/ Sans\ Cond\ L\ Black.otf') format('woff');
- }
+@font-face {
+    font-family: 'condblack';
+    src: url('../media/fonts/Nimbus\ Sans\ Cond\ L\ Black.otf') format('woff2'),
+        url('../media/fonts/ Sans\ Cond\ L\ Black.otf') format('woff');
+}
