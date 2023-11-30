@@ -4,6 +4,7 @@ html {
     color: white;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     scroll-behavior: smooth;
@@ -51,7 +52,7 @@ body {
 }
 
 #tekst1 {
-    line-height: 100px;  
+    line-height: 100px;
     font-size: 110px;
 
 }
@@ -65,8 +66,8 @@ body {
     text-align: center;
     width: 430px;
     left: 110px;
-    text-shadow: 0px 0px  rgb(11, 202, 11) ;
-    font-size: 80px;  
+    text-shadow: 0px 0px rgb(11, 202, 11);
+    font-size: 80px;
     letter-spacing: 3px;
 }
 
@@ -88,6 +89,7 @@ body {
     0%, 100% {
         margin-top: 1450px;
     }
+
     50% {
         margin-top: 1500px;
     }
@@ -123,27 +125,30 @@ body {
     padding-right: 8rem;
     line-height: 1rem;
 }
+
 .right {
     display: flex;
     justify-content: center;
     padding-right: 8rem;
     width: 50%;
 }
+
 .square-left {
     position: absolute;
     width: 250px;
     height: 250px;
     right: 41rem;
     z-index: auto;
-    background-color:  var( --Mediavormgeven-Kleur);   
+    background-color: var(--Mediavormgeven-Kleur);
 
 
 }
+
 .square-right {
     position: absolute;
     width: 250px;
     height: 250px;
-    background-color:  var( --Mediavormgeven-Kleur);
+    background-color: var(--Mediavormgeven-Kleur);
 }
 
 @keyframes hoverAnimation {
@@ -155,6 +160,7 @@ body {
         z-index: auto;
         pointer-events: all;
     }
+
     1% {
         position: absolute;
         width: 250px;
@@ -163,6 +169,7 @@ body {
         z-index: auto;
         pointer-events: none;
     }
+
     10% {
         position: absolute;
         width: 250px;
@@ -171,6 +178,7 @@ body {
         z-index: auto;
         pointer-events: none;
     }
+
     50% {
         position: absolute;
         left: 0%;
@@ -179,6 +187,7 @@ body {
         z-index: 10;
         pointer-events: none;
     }
+
     99% {
         position: absolute;
         left: 0%;
@@ -187,6 +196,7 @@ body {
         z-index: 10;
         pointer-events: none;
     }
+
     100% {
         position: absolute;
         left: 0%;
@@ -206,6 +216,7 @@ body {
         z-index: auto;
         pointer-events: all;
     }
+
     99% {
         position: absolute;
         width: 250px;
@@ -214,6 +225,7 @@ body {
         z-index: auto;
         pointer-events: none;
     }
+
     90% {
         position: absolute;
         width: 250px;
@@ -222,6 +234,7 @@ body {
         z-index: auto;
         pointer-events: none;
     }
+
     50% {
         position: absolute;
         left: 0%;
@@ -230,6 +243,7 @@ body {
         z-index: 10;
         pointer-events: none;
     }
+
     1% {
         position: absolute;
         left: 0%;
@@ -238,6 +252,7 @@ body {
         z-index: 10;
         pointer-events: none;
     }
+
     0% {
         position: absolute;
         left: 0%;
@@ -257,17 +272,19 @@ body {
         height: 250px;
         right: 41rem;
         z-index: auto;
-        pointer-events:all;
+        pointer-events: all;
 
     }
-  1% {
-    position: absolute;
+
+    1% {
+        position: absolute;
         width: 250px;
         height: 250px;
         right: 41rem;
         z-index: auto;
-        pointer-events:none;
-  }
+        pointer-events: none;
+    }
+
     10% {
         position: absolute;
         width: 250px;
@@ -276,6 +293,7 @@ body {
         z-index: auto;
         pointer-events: none;
     }
+
     50% {
         position: absolute;
         right: 0%;
@@ -285,6 +303,7 @@ body {
         pointer-events: none;
 
     }
+
     99% {
         position: absolute;
         right: 0%;
@@ -293,6 +312,7 @@ body {
         z-index: 10;
         pointer-events: none;
     }
+
     100% {
         position: absolute;
         right: 0%;
@@ -303,6 +323,7 @@ body {
 
     }
 }
+
 @keyframes hoverAnimation1Close {
     100% {
         position: absolute;
@@ -315,14 +336,14 @@ body {
     }
 
     99% {
-         position: absolute;
+        position: absolute;
         width: 250px;
         height: 250px;
         right: 41rem;
         z-index: auto;
         pointer-events: none;
     }
-  
+
     90% {
         position: absolute;
         width: 250px;
@@ -332,6 +353,7 @@ body {
         pointer-events: none;
 
     }
+
     50% {
         position: absolute;
         right: 0%;
@@ -341,6 +363,7 @@ body {
         pointer-events: none;
 
     }
+
     1% {
         position: absolute;
         right: 0%;
@@ -349,6 +372,7 @@ body {
         z-index: 10;
         pointer-events: none;
     }
+
     0% {
         position: absolute;
         right: 0%;
@@ -363,12 +387,15 @@ body {
 .hoverAnimation {
     animation: hoverAnimation 2s ease-in-out forwards;
 }
+
 .hoverAnimationClose {
     animation: hoverAnimationClose 2s ease-in-out forwards;
 }
+
 .hoverAnimation1 {
     animation: hoverAnimation1 2s ease-in-out forwards;
 }
+
 .hoverAnimation1Close {
     animation: hoverAnimation1Close 2s ease-in-out forwards;
 }
@@ -392,6 +419,7 @@ body {
     text-decoration: none;
     color: white;
 }
+
 .opleiding-button span {
     text-decoration: none;
     color: white;
@@ -406,32 +434,38 @@ body {
     left: 48rem;
     margin-top: 3.2rem;
 }
+
 .button-2 {
     padding: 0.2rem;
     margin-top: 18.8rem;
     left: 4rem;
 }
+
 .button-3 {
     padding: 0.2rem;
     left: 48rem;
     margin-top: 34.5rem;
 }
+
 .button-4 {
     padding: 0.2rem;
     margin-top: 50.1rem;
     left: 4rem;
 }
+
 .button-5 {
     padding: 0.2rem;
     left: 48rem;
     margin-top: 65.7rem;
 }
+
 .button-6 {
     padding: 0.2rem;
     left: 48rem;
     margin-top: 97rem;
     z-index: 5;
 }
+
 .button-7 {
     padding: 0.2rem;
     margin-top: 81.3rem;
@@ -450,6 +484,7 @@ body {
     z-index: -10;
 
 }
+
 .background-img-2 {
     width: 50%;
     position: absolute;
@@ -473,7 +508,7 @@ body {
     cursor: pointer;
 }
 
-.mediamaker{ 
+.mediamaker {
     position: relative;
     top: 90px;
     left: -350px !important;
@@ -538,47 +573,53 @@ body {
 
 @keyframes buttonshow {
     0% {
-opacity: 0;
-margin-top: -100px;
-display: none;
+        opacity: 0;
+        margin-top: -100px;
+        display: none;
     }
+
     1% {
         opacity: 0;
-margin-top: 0px;
-display: block;
+        margin-top: 0px;
+        display: block;
     }
+
     50% {
         opacity: 0;
-margin-top: 0px;
-display: block;
+        margin-top: 0px;
+        display: block;
     }
+
     100% {
-opacity: 1;
-margin-top: 0px;
-display: block;
+        opacity: 1;
+        margin-top: 0px;
+        display: block;
     }
 }
 
 @keyframes buttonhide {
     100% {
-opacity: 0;
-margin-top: -100px;
-display: none;
+        opacity: 0;
+        margin-top: -100px;
+        display: none;
     }
+
     99% {
         opacity: 0;
-margin-top: 0px;
-display: block;
+        margin-top: 0px;
+        display: block;
     }
+
     50% {
         opacity: 0;
-margin-top: 0px;
-display: block;
+        margin-top: 0px;
+        display: block;
     }
+
     0% {
-opacity: 1;
-margin-top: 0px;
-display: block;
+        opacity: 1;
+        margin-top: 0px;
+        display: block;
     }
 }
 
