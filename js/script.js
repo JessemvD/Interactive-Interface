@@ -53,6 +53,7 @@ function modeswitch(squareId) {
 }
 
 
+
 function modeswitch2(squareId) {
   var changeElement = document.getElementById(squareId);
   if (changeElement) {
@@ -98,3 +99,30 @@ function modeswitchleft2(squareId2) {
   }
 }
 
+
+
+
+
+function updateText(text) {
+  let delay = 200;
+
+  let h1 = document.getElementById("animated");
+
+  h1.innerHTML = text
+    .split("")
+    .map((letter) => {
+      console.log(letter);
+      return `<span>` + letter + `</span>`;
+    })
+    .join("");
+
+  // Adjust the selector to target the spans within the updated h1 element
+  Array.from(h1.getElementsByTagName("span")).forEach((span, index) => {
+    setTimeout(() => {
+      span.classList.add("wavy");
+    }, index * 60 + delay);
+  });
+}
+
+// Call updateText function with your desired text
+updateText("SWIPE UP");

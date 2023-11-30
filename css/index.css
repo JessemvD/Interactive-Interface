@@ -6,7 +6,6 @@ html {
 }
 body {
     margin: 0;
-    height: 200vh;
     scroll-behavior: smooth;
 }
 
@@ -18,6 +17,8 @@ body {
     margin-right: auto;
     scroll-snap-type: y mandatory;
 }
+
+
 
 #logodiv {
     width: 100px;
@@ -73,6 +74,7 @@ body {
 .meerinfo {
     text-decoration: none;
     color: white;
+    text-shadow: 4px 4px rgb(121, 121, 121);
 }
 
 .arrow {
@@ -84,10 +86,10 @@ body {
 
 @keyframes moveUpDown {
     0%, 100% {
-        margin-top: 1450px; /* Initial position */
+        margin-top: 1450px;
     }
     50% {
-        margin-top: 1500px; /* Middle position (adjust as needed) */
+        margin-top: 1500px;
     }
 }
 
@@ -383,6 +385,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .opleiding-button * {
@@ -460,8 +463,7 @@ body {
 
 
 .button {
-    background-color: #000000;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     padding: 10px 20px 20px 10px;
     color: white;
@@ -478,8 +480,7 @@ body {
 }
 
 .button2 {
-    background-color: #000000;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     padding: 10px;
     color: white;
@@ -490,10 +491,19 @@ body {
     display: none;
     cursor: pointer;
 }
+.middlebtn {
+    position: relative;
+    top: -90px !important;
+}
+
+.middlebtn2 {
+    position: relative;
+    top: 0px !important;
+    width: 1000px !important;
+}
 
 .button3 {
-    background-color: #000000;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     padding: 10px;
     color: white;
@@ -501,7 +511,7 @@ body {
     display: none;
     cursor: pointer;
     position: relative;
-    top: -100px;
+    top: -270px;
     left: 350px;
 }
 
@@ -520,9 +530,9 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, auto); /* Two columns */
-    justify-items: center; /* Centers the items horizontally within the grid */
-    align-items: center; /* Centers the items vertically within the grid */
+    grid-template-columns: repeat(1, auto); 
+    justify-items: center; 
+    align-items: center; 
 }
 
 
@@ -575,4 +585,41 @@ display: block;
 .link {
     text-decoration: none;
 }
+
+
+
+.wavy {
+  animation-name: wavy, color;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes color {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    10% {
+        color: rgb(132, 209, 9);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+
 

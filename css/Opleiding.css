@@ -5,7 +5,11 @@ body {
     overflow: hidden;
 }
 
-
+/* .terug {
+    margin: 0;
+    position: relative;
+    top: -80px;
+} */
 
 .opleidingTitel {
     line-height: 100px;
