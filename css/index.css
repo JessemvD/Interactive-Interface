@@ -2,10 +2,12 @@ html {
     background-color: white;
     font-family: condblack;
     color: white;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
     height: 200vh;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -149,6 +151,15 @@ body {
         height: 250px;
         left: 41rem;
         z-index: auto;
+        pointer-events: all;
+    }
+    1% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 41rem;
+        z-index: auto;
+        pointer-events: none;
     }
     10% {
         position: absolute;
@@ -156,6 +167,7 @@ body {
         height: 250px;
         left: 42.5rem;
         z-index: auto;
+        pointer-events: none;
     }
     50% {
         position: absolute;
@@ -163,6 +175,15 @@ body {
         width: 250px;
         height: 250px;
         z-index: 10;
+        pointer-events: none;
+    }
+    99% {
+        position: absolute;
+        left: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+        pointer-events: none;
     }
     100% {
         position: absolute;
@@ -170,7 +191,7 @@ body {
         width: 1080px;
         height: 250px;
         z-index: 10;
-
+        pointer-events: all;
     }
 }
 
@@ -181,6 +202,15 @@ body {
         height: 250px;
         left: 41rem;
         z-index: auto;
+        pointer-events: all;
+    }
+    99% {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        left: 41rem;
+        z-index: auto;
+        pointer-events: none;
     }
     90% {
         position: absolute;
@@ -188,6 +218,7 @@ body {
         height: 250px;
         left: 42.5rem;
         z-index: auto;
+        pointer-events: none;
     }
     50% {
         position: absolute;
@@ -195,6 +226,15 @@ body {
         width: 250px;
         height: 250px;
         z-index: 10;
+        pointer-events: none;
+    }
+    1% {
+        position: absolute;
+        left: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+        pointer-events: none;
     }
     0% {
         position: absolute;
@@ -202,6 +242,7 @@ body {
         width: 1080px;
         height: 250px;
         z-index: 10;
+        pointer-events: all;
 
     }
 }
@@ -214,10 +255,17 @@ body {
         height: 250px;
         right: 41rem;
         z-index: auto;
-        pointer-events: none;
+        pointer-events:all;
 
     }
-  
+  1% {
+    position: absolute;
+        width: 250px;
+        height: 250px;
+        right: 41rem;
+        z-index: auto;
+        pointer-events:none;
+  }
     10% {
         position: absolute;
         width: 250px;
@@ -225,7 +273,6 @@ body {
         right: 42.5rem;
         z-index: auto;
         pointer-events: none;
-
     }
     50% {
         position: absolute;
@@ -236,12 +283,21 @@ body {
         pointer-events: none;
 
     }
+    99% {
+        position: absolute;
+        right: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+        pointer-events: none;
+    }
     100% {
         position: absolute;
         right: 0%;
         width: 1080px;
         height: 250px;
         z-index: 10;
+        pointer-events: all;
 
     }
 }
@@ -252,8 +308,17 @@ body {
         height: 250px;
         right: 41rem;
         z-index: auto;
-        pointer-events: none;
+        pointer-events: all;
 
+    }
+
+    99% {
+         position: absolute;
+        width: 250px;
+        height: 250px;
+        right: 41rem;
+        z-index: auto;
+        pointer-events: none;
     }
   
     90% {
@@ -274,13 +339,21 @@ body {
         pointer-events: none;
 
     }
-    0% {
+    1% {
         position: absolute;
         right: 0%;
         width: 1080px;
         height: 250px;
         z-index: 10;
         pointer-events: none;
+    }
+    0% {
+        position: absolute;
+        right: 0%;
+        width: 1080px;
+        height: 250px;
+        z-index: 10;
+        pointer-events: all;
     }
 
 }
@@ -381,5 +454,125 @@ body {
     bottom: 1rem;
     right: 0;
     z-index: -10;
-
 }
+
+
+
+
+.button {
+    background-color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 20px 20px 10px;
+    color: white;
+    width: auto;
+    display: none;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.mediamaker{ 
+    position: relative;
+    top: 90px;
+    left: -350px !important;
+}
+
+.button2 {
+    background-color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    width: 250px;
+    margin-top: 0px;
+    /* margin-left: 50%;
+    transform: translate(-50%); */
+    display: none;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    width: 250px;
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: -100px;
+    left: 350px;
+}
+
+.buttonshow {
+    animation: buttonshow 2s ease-in-out forwards;
+    display: block;
+}
+
+.buttonhide {
+    animation: buttonhide 2s ease-in-out forwards;
+    display: block;
+}
+
+
+.grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, auto); /* Two columns */
+    justify-items: center; /* Centers the items horizontally within the grid */
+    align-items: center; /* Centers the items vertically within the grid */
+}
+
+
+@keyframes buttonshow {
+    0% {
+opacity: 0;
+margin-top: -100px;
+display: none;
+    }
+    1% {
+        opacity: 0;
+margin-top: 0px;
+display: block;
+    }
+    50% {
+        opacity: 0;
+margin-top: 0px;
+display: block;
+    }
+    100% {
+opacity: 1;
+margin-top: 0px;
+display: block;
+    }
+}
+
+@keyframes buttonhide {
+    100% {
+opacity: 0;
+margin-top: -100px;
+display: none;
+    }
+    99% {
+        opacity: 0;
+margin-top: 0px;
+display: block;
+    }
+    50% {
+        opacity: 0;
+margin-top: 0px;
+display: block;
+    }
+    0% {
+opacity: 1;
+margin-top: 0px;
+display: block;
+    }
+}
+
+.link {
+    text-decoration: none;
+}
+

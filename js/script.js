@@ -42,15 +42,28 @@ function modeswitch(squareId) {
   if (changeElement) {
     changeElement.classList.add("hoverAnimation");
     changeElement.classList.remove("hoverAnimationClose");
+    changeElement.querySelector(".button").classList.add("buttonshow");
+    changeElement.querySelector(".button").classList.remove("buttonhide");
+    changeElement.querySelector(".button2").classList.add("buttonshow");
+    changeElement.querySelector(".button2").classList.remove("buttonhide");
+     changeElement.querySelector(".button3").classList.add("buttonshow");
+     changeElement.querySelector(".button3").classList.remove("buttonhide");
     changeElement.setAttribute("onclick", "modeswitch2('" + squareId + "')");
   }
 }
+
 
 function modeswitch2(squareId) {
   var changeElement = document.getElementById(squareId);
   if (changeElement) {
     changeElement.classList.add("hoverAnimationClose");
     changeElement.classList.remove("hoverAnimation");
+    changeElement.querySelector(".button").classList.remove("buttonshow");
+    changeElement.querySelector(".button").classList.add("buttonhide");
+    changeElement.querySelector(".button2").classList.remove("buttonshow");
+    changeElement.querySelector(".button2").classList.add("buttonhide");
+    changeElement.querySelector(".button3").classList.remove("buttonshow");
+    changeElement.querySelector(".button3").classList.add("buttonhide");
     changeElement.setAttribute("onclick", "modeswitch('" + squareId + "')");
   }
 }
@@ -60,6 +73,12 @@ function modeswitchleft(squareId2) {
   if (changeElement) {
     changeElement.classList.add("hoverAnimation1");
     changeElement.classList.remove("hoverAnimation1Close");
+    changeElement.querySelector(".button").classList.add("buttonshow");
+    changeElement.querySelector(".button").classList.remove("buttonhide");
+    changeElement.querySelector(".button2").classList.add("buttonshow");
+    changeElement.querySelector(".button2").classList.remove("buttonhide");
+    changeElement.querySelector(".button3").classList.add("buttonshow");
+    changeElement.querySelector(".button3").classList.remove("buttonhide");
     changeElement.setAttribute("onclick", "modeswitchleft2('" + squareId2 + "')");
   }
 }
@@ -69,6 +88,13 @@ function modeswitchleft2(squareId2) {
   if (changeElement) {
     changeElement.classList.add("hoverAnimation1Close");
     changeElement.classList.remove("hoverAnimation1");
+    changeElement.querySelector(".button").classList.remove("buttonshow");
+    changeElement.querySelector(".button").classList.add("buttonhide");
+     changeElement.querySelector(".button2").classList.remove("buttonshow");
+    changeElement.querySelector(".button2").classList.add("buttonhide");
+    changeElement.querySelector(".button3").classList.remove("buttonshow");
+    changeElement.querySelector(".button3").classList.add("buttonhide");
     changeElement.setAttribute("onclick", "modeswitchleft('" + squareId2 + "')");
   }
 }
+
